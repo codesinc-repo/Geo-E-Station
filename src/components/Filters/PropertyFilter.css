@@ -39,14 +39,11 @@
   color: #4B4B4B;
   font-family: inter;
 }
-.view-con .box{
-  width:33% !important;
-}
 select{
   background: transparent;
 }
 .transbtn{
-  border-radius: 50px;
+  border-radius: 2rem !important;
   display: inline-block;
   max-width: 50%;
   padding: 12px 61px;
@@ -54,12 +51,16 @@ select{
   font-size: 14px;
   font-weight: 500;
   line-height: 14px;
+  border: none !important;
+  color: #666 !important;
 }
 .transbtn.active{
-  background: #6CCA98;
-  color: #fff;
+  background-color: #6CCA98 !important;
+  color: #fff !important;
 }
 .transbtngroup{
+  background-color: #eee;
+  border-radius: 2rem !important;
   width: 100%;
 }
 .check{
@@ -67,21 +68,26 @@ select{
   margin-top: -5px;
   margin-right: 3px;
 }
+
+.checks input[type="checkbox"] {
+  width: auto !important;
+}
+
 .checks{
-  width: 100%;
+  width: fit-content !important;
   margin-top: -5px;
-  margin-right: 3px;
+  margin-right: 10px;
 }
 .bedroom-btn{
-  background-color: #F2F4F7;
+  background-color: #F2F4F7 !important;
   padding: 6px 24px;
-  border-radius: 10px;
+  border-radius: 24px !important;
   border: none !important;
   font-family: inter;
   font-size: 14px;
   font-weight: 500;
   line-height: 20px;
-  color: #4B4B4B;
+  color: #4B4B4B !important;
 }
 .bedroom-btn:hover {
   background-color: #6CCA98; /* Bootstrap primary blue */
@@ -177,4 +183,10 @@ select{
   border: 1px solid #ddd;
   border-radius: 4px;
   font-size: 14px;
+}
+
+@media (max-width: 500px) {
+  .modal-dialog {
+    margin: 0 !important;
+  }
 }

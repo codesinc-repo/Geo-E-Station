@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './PriceRangeSlider.css';
 
-const PriceRangeSlider = ({ min = 0, max = 10000000000, onChange }) => {
+const PriceRangeSlider = ({ min = 0, max = 10000000000, onChange , title = "Pricing Range"}) => {
   const [minVal, setMinVal] = useState(min);
   const [maxVal, setMaxVal] = useState(max);
 
@@ -23,9 +23,39 @@ const PriceRangeSlider = ({ min = 0, max = 10000000000, onChange }) => {
 
   return (
     <div className="price-range-container">
-      <h2 className="section-header">Price range</h2>
+      <h2 className="section-header">{title}</h2>
+
+            
+      <div className="range-input-container">
+        <div className="range-input">
+          <label>Min</label>
+          <div className="input-wrapper">
+            <span>$</span>
+            <input
+              type="number"
+              value={minVal}
+              onChange={handleMinChange}
+              min={min}
+              max={maxVal - 1}
+            />
+          </div>
+        </div>
+        <div className="range-input">
+          <label>Max</label>
+          <div className="input-wrapper">
+            <span>$</span>
+            <input
+              type="number"
+              value={maxVal}
+              onChange={handleMaxChange}
+              min={minVal + 1}
+              max={max}
+            />
+          </div>
+        </div>
+      </div>
       
-      <div className="slider-container">
+      <div className="slider-container mt-5 mb-0 pb-0">
         <div className="slider-track d-flex " />
         <input
           type="range"
@@ -56,35 +86,7 @@ const PriceRangeSlider = ({ min = 0, max = 10000000000, onChange }) => {
           }}
         />
       </div>
-      
-      <div className="range-input-container">
-        <div className="range-input">
-          <label>Min</label>
-          <div className="input-wrapper">
-            <span>$</span>
-            <input
-              type="number"
-              value={minVal}
-              onChange={handleMinChange}
-              min={min}
-              max={maxVal - 1}
-            />
-          </div>
-        </div>
-        <div className="range-input">
-          <label>Max</label>
-          <div className="input-wrapper">
-            <span>$</span>
-            <input
-              type="number"
-              value={maxVal}
-              onChange={handleMaxChange}
-              min={minVal + 1}
-              max={max}
-            />
-          </div>
-        </div>
-      </div>
+
     </div>
   );
 };
