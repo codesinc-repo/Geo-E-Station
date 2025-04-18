@@ -1,0 +1,108 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #51e936; /* Light green */
+    color: #ffffff; /* White text */
+}
+header {
+    background: linear-gradient(90deg, #28a745, #218838); /* Darker green gradient */
+}
+header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.section-heading {
+    font-size: 1.8rem;
+    font-weight: bold;
+    border-bottom: 2px solid #09ff00;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+.icon-box {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #28a745; /* Dark green border */
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    background: #28a745; /* Light green background for cards */
+    color: #ffffff; /* White text for cards */
+}
+.icon-box:hover {
+    background-color: #218838; /* Slightly darker green on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform: scale(1.05);
+}
+.icon {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #ffffff; /* White icons */
+}
+ul.list-group {
+    background: transparent;
+}
+ul.list-group .list-group-item {
+    background: #28a745; /* Light green */
+    border: none;
+    color: #ffffff; /* White text */
+}
+ul.list-group .list-group-item:not(:last-child) {
+    border-bottom: 1px solid #218838; /* Dark green border between items */
+}
+ /* Sidebar */
+.sidebar {
+position: absolute;
+top: 0;
+left: 0;
+width: 60px;
+height: 160vh;
+background: #33DB4A;
+display: flex;
+flex-direction: column;
+align-items: center;
+padding-top: 10px;
+z-index: 1000;
+}
+
+.sidebar img {
+width: 50px;
+height: 30px;
+margin-bottom: 20px;
+}
+
+.sidebar ul {
+list-style: none;
+padding: 0;
+margin: 0;
+width: 100%;
+}
+
+.sidebar li {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 60px;
+cursor: pointer;
+}
+
+.sidebar i {
+color: #fff;
+font-size: 20px;
+transition: color 0.3s ease;
+}
+
+.sidebar i:hover {
+color: #f0d124;
+}
+
+.sidebar .separator {
+width: 80%;
+height: 1px;
+background: #555;
+margin: 20px 0;
+}
+
+.sidebar .logout {
+margin-top: auto;
+margin-bottom: 20px;
+}

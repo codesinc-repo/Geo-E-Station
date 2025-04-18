@@ -1,0 +1,167 @@
+/* Container for the entire component */
+.property-to-pdf-container {
+    text-align: center;
+    padding: 30px;
+    font-family: 'Roboto', sans-serif;
+    background: #f5f5f5;
+}
+
+/* Header styling */
+.property-header {
+    margin-bottom: 25px;
+    font-size: 32px;
+    color: #333;
+}
+
+/* Input group styling */
+.input-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Input field styling */
+.property-input {
+    padding: 12px;
+    width: 60%;
+    max-width: 400px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+/* General button styling */
+.property-button,
+.property-download-button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease;
+}
+
+/* Fetch button styling */
+.property-button {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.property-button:hover {
+    background-color: #0056b3;
+}
+
+/* Loading text styling */
+.loading-text {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #555;
+}
+
+/* Card layout for property content */
+.property-card {
+    border-radius: 8px;
+    background: #fff;
+    padding: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Container for the property details */
+.property-content {
+    margin-top: 30px;
+    text-align: left;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+}
+
+/* Property details layout */
+.property-details {
+    margin-bottom: 20px;
+}
+
+/* Property title styling */
+.property-title {
+    color: #007bff;
+    margin-bottom: 20px;
+    font-size: 28px;
+    border-bottom: 1px solid #eaeaea;
+    padding-bottom: 10px;
+}
+
+/* Table styling for property details */
+.property-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.property-table th,
+.property-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+    vertical-align: top;
+}
+
+.property-table th {
+    background-color: #f7f7f7;
+    font-weight: bold;
+}
+
+/* Nested table styling */
+.property-nested-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.property-nested-table td {
+    padding: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+/* Images container within table cell */
+.property-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/* Individual image styling */
+.property-image {
+    /* width: 200px; */
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+/* No data text styling */
+.no-data {
+    font-style: italic;
+    color: #777;
+}
+
+/* Download button styling */
+.property-download-button {
+    background-color: #28a745;
+    color: #fff;
+    margin-top: 25px;
+}
+
+.property-download-button:hover {
+    background-color: #218838;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .property-input {
+        width: 80%;
+    }
+    .property-image {
+        width: 100%;
+        max-width: 300px;
+    }
+}

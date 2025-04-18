@@ -1,0 +1,170 @@
+
+body {
+  background-color: #fff;
+  color: #fff;
+}
+
+.tomzi-container {
+  max-width: 90%; /* Adjust width dynamically */
+  margin: 0 auto;
+  padding: 40px 20px;
+  background-color: #33DB4A;
+  color: #fff;
+  border-radius: 8px;
+}
+
+/* Media query for larger screens */
+@media (min-width: 1200px) {
+  .tomzi-container {
+    max-width: 1200px; /* Maintain a max width for larger screens */
+  }
+}
+
+.tomzi-heading {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+.tomzi-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.tomzi-col {
+  flex: 1 1 calc(50% - 10px); /* 50% width for each column with gap adjustment */
+}
+
+.tomzi-payment-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 20px;
+  background-color: #fff;
+  color: #333;
+}
+
+.tomzi-payment-card img {
+  height: 40px;
+  max-width: 100%;
+}
+
+.tomzi-add-payment {
+  cursor: pointer;
+  background-color: #f1f3f5;
+  border: 2px dashed #ced4da;
+  text-align: center;
+  padding: 30px;
+  border-radius: 8px;
+  color: #6c757d;
+  transition: background-color 0.3s ease-in-out;
+  margin-top: 5px;
+}
+
+.tomzi-add-payment:hover {
+  background-color: #e9ecef;
+}
+
+/* Payment Form Styling */
+.form-container {
+  display: none; /* Initially hidden */
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 20px;
+  color: #333;
+  max-height: 0; /* Collapsed by default */
+  overflow: hidden;
+  transition: max-height 0.5s ease, opacity 0.5s ease; /* Smooth transitions */
+  opacity: 0; /* Initially invisible */
+}
+
+.form-container.show {
+  display: block;
+  max-height: 1000px; /* Arbitrary value to allow expansion */
+  opacity: 1;
+}
+
+.form-label {
+  font-weight: bold;
+}
+
+.btn-primary {
+  background-color: #0069d9;
+  color: #fff;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+  color: #fff;
+}
+
+.form-check-label {
+  font-size: 14px;
+}
+.sidebar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 657px;
+  background: #33DB4A;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10px;
+  z-index: 1000;
+}
+
+.sidebar img {
+  width: 50px;
+  height: 30px;
+  margin-bottom: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.sidebar li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  cursor: pointer;
+}
+
+.sidebar i {
+  color: #fff;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+.sidebar i:hover {
+  color: #f0d124;
+}
+
+.sidebar .separator {
+  width: 80%;
+  height: 1px;
+  background: #555;
+  margin: 20px 0;
+}
+
+.sidebar .logout {
+  margin-top: auto;
+  margin-bottom: 20px;
+}
+

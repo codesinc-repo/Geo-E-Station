@@ -1,0 +1,51 @@
+.analytics-container {
+    padding: 20px;
+    border: 2px solid #28a745;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    
+  }
+  
+  .analytics-header {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;  
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .analytics-description {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .analytics-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .card {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #28a745;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .card-header {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+
+  
+  

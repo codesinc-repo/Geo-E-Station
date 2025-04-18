@@ -1,0 +1,7 @@
+@media (max-width: 768px) {
+  .UserHome {
+    position: absolute;
+    left: 47px;
+    overflow-x: hidden;
+  }
+}

@@ -1,0 +1,91 @@
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .login-container {
+        margin-top: 20px;
+      width: 100%;
+      max-width: 400px; /* Slimmer width */
+      padding: 30px;
+      
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .login-logo {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .login-logo img {
+      max-width: 120px; /* Adjust logo size */
+    }
+    .form-label {
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+    .form-control {
+      height: 38px; /* Slimmer input field */
+      font-size: 0.9rem;
+    }
+    .btn {
+      height: 38px; /* Slimmer button */
+      font-size: 0.9rem;
+    }
+    .input-group-text {
+      background-color: #fff;
+      border-left: none;
+      cursor: pointer;
+    }
+    .socialmedia {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+    .btn:hover {
+      opacity: 0.9;
+    }
+    .form-control:focus, 
+    .input-group-text:focus {
+      border-color: #28a745 !important; /* Green border */
+      box-shadow: none; /* Subtle green glow */
+      outline: none; /* Remove the default blue outline */
+    }
+    .enterbutton {
+      color: #fcfcfb;
+      background-color: #28a745;
+    }
+    .enterbutton:hover {
+      color: #fcfcfb;
+      background-color: #218838;
+    }
+    .language-dropdown {
+      position: absolute;
+      top: 15px;
+      left: 15px;
+    }
+    .btn-google,
+    .btn-facebook,
+    .btn-apple {
+        border: 1px solid black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 38px;
+    }
+    .btn-google i,
+    .btn-facebook i,
+    .btn-apple i {
+        margin-right: 8px;
+    }
+    .newsignup{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: 10px;
+        font-size: 10px;
+    }

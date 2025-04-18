@@ -1,0 +1,45 @@
+
+body {
+    font-family: Arial, sans-serif;
+  }
+  .survey-container {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #28a745;
+    border-radius: 8px;
+  }
+  .survey-title {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  .survey-option {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 100%;
+    height: 150px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  .survey-option:hover {
+    border: 1px solid #28a745;
+    background-color: #f6fff7;
+  }
+  .icon {
+    font-size: 3rem;
+    color: #28a745;
+    margin-bottom: 10px;
+  }
+  .login-container img {
+    width: 170px;
+    height: auto;
+    margin: 20px;
+  }
+  

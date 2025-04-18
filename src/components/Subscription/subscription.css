@@ -1,0 +1,125 @@
+.subscription-container {
+    width: 85vw;
+    height: 100vh;
+    margin: 20px auto;
+    padding: 20px;
+    border: 2px solid #28a745;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  
+  .subscription-section {
+    margin-bottom: 20px;
+    color: black;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+  }
+  
+  .subscription-header {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .plan-highlight {
+    color: #28a745;
+    font-weight: bold;
+  }
+  
+  .usage-highlight {
+    color: #ff0000;
+    font-weight: bold;
+  }
+  
+  .add-users-link {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .add-users-link:hover {
+    text-decoration: underline;
+  }
+  
+  .status-active {
+    color: #28a745;
+    font-weight: bold;
+  }
+  
+  .change-link {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .change-link:hover {
+    text-decoration: underline;
+  }
+  
+  .change-plan-section {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    text-align: center;
+  }
+  
+  .change-plan-header {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .current-plan-highlight {
+    color: #28a745;
+    font-weight: bold;
+  }
+  
+  .change-plan-button {
+    background-color: #28a745;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .change-plan-button:hover {
+    background-color: #218838;
+  }
+  
+  .cancel-account-section {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    text-align: center;
+  }
+  
+  .cancel-account-text {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .cancel-account-button {
+    background-color: #28a745;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .cancel-account-button:hover {
+    background-color: #218838;
+  }
+  

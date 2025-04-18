@@ -1,0 +1,60 @@
+
+        body {
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            .unique-subscription-box {
+                max-width: 400px;
+                /* margin: 50px auto; */
+                border: 1px solid #ddd;
+                border-radius: 8px;
+                padding: 20px;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            }
+
+            .unique-price {
+                font-size: 1.5rem;
+                font-weight: bold;
+                color: #333;
+            }
+
+            .unique-total-section {
+                border-top: 1px solid #ddd;
+                padding-top: 10px;
+                margin-top: 10px;
+            }
+
+
+            .custom-form-box {
+                max-width: 500px;
+                margin: 50px auto;
+                padding: 20px;
+                border: 1px solid #ddd;
+                border-radius: 8px;
+                background: #f9f9f9;
+            }
+
+            .custom-error {
+                color: #d9534f;
+                font-size: 0.9rem;
+            }
+
+            .custom-input-box {
+                background-color: #fff;
+                border-radius: 5px;
+                border: 1px solid #ddd;
+                padding: 10px;
+            }
+
+            .subscribe-button {
+                background-color: #28a745;
+                color: #fff;
+            }
+
+            .subscribe-button:hover {
+                background-color: #218838;
+            }
+        }

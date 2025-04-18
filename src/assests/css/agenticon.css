@@ -1,0 +1,111 @@
+
+body {
+  background-color: #fff; /* White background */
+  color: #fff; /* White text */
+}
+
+.agent-management {
+  
+  width: 90%;
+  height: 100vh;
+  margin:  auto;
+  background-color: #33DB4A; /* Green background */
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.agent-list {
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.agent-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #444; /* Dark background for agent items */
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.agent-item span {
+  word-break: break-word;
+}
+
+.btn {
+  color: #fff; /* White text color for buttons */
+}
+
+.btn-success {
+  background-color: #0069d9; /* Blue background for success button */
+  color: #fff;
+}
+
+.btn-danger {
+  background-color: #dc3545; /* Red background for danger button */
+  color: #fff;
+}
+
+.btn-sm {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1.25;
+  border-radius: 0.2rem;
+}    .sidebar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 100%;
+  background: #33DB4A;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10px;
+  z-index: 1000;
+}
+
+.sidebar img {
+  width: 50px;
+  height: 30px;
+  margin-bottom: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.sidebar li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  cursor: pointer;
+}
+
+.sidebar i {
+  color: #fff;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+.sidebar i:hover {
+  color: #f0d124;
+}
+
+.sidebar .separator {
+  width: 80%;
+  height: 1px;
+  background: #555;
+  margin: 20px 0;
+}
+
+.sidebar .logout {
+  margin-top: auto;
+  margin-bottom: 20px;
+}
+

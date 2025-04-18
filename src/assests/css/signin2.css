@@ -1,0 +1,48 @@
+
+ 
+body {
+  font-family: Arial, sans-serif;
+  color: black;
+}
+.form-container {
+  max-width: 700px;
+  margin: 50px auto;
+  border: 1px solid #28a745; /* Green border */
+  padding: 20px;
+  border-radius: 8px;
+}
+.btn-follow {
+  background-color: #28a745; /* Green background */
+  color: white;
+  font-weight: bold;
+  border: none;
+  width: 100%;
+  margin-top: 7px;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.btn-follow:hover {
+  background-color: #1e7e34; /* Darker green background */
+}
+.option-button{
+  background-color: #f8f9fa; /* Light gray background */
+  color: black;
+  border: 1px solid #dee2e6; /* Gray border */
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 7px;
+  margin-bottom: 10px;
+}
+.option-button:hover {
+  background-color: #f8f9fa; /* Light gray background */
+  border: 2px solid #28a745; /* Green border */
+}
+
+.form-control:focus, 
+.form-label:focus {
+  border-color: #28a745 !important; /* Green border */
+  box-shadow: none;
+  outline: none;
+}

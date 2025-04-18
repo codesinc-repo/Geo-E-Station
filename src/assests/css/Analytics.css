@@ -1,0 +1,75 @@
+
+.sidebar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 100%;
+  background: #33DB4A;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10px;
+  z-index: 1000;
+}
+
+.sidebar img {
+  width: 50px;
+  height: 30px;
+  margin-bottom: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.sidebar li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  cursor: pointer;
+}
+
+.sidebar i {
+  color: #fff;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+.sidebar i:hover {
+  color: #f0d124;
+}
+
+.sidebar .separator {
+  width: 80%;
+  height: 1px;
+  background: #555;
+  margin: 20px 0;
+}
+
+.sidebar .logout {
+  margin-top: auto;
+  margin-bottom: 20px;
+}
+
+
+.task-calendar {
+max-width: 1200px;
+margin: auto;
+}
+
+.calendar-table th,
+.calendar-table td {
+text-align: center;
+vertical-align: middle;
+height: 100px;
+}
+
+.calendar-table .highlight {
+background-color: rgba(0, 123, 255, 0.2);
+}
+

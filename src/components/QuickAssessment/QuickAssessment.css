@@ -1,0 +1,64 @@
+.quick-assessment-section {
+    background-color: #f8f9fa;
+    border-radius: 4px;
+    padding: 1.5rem;
+  }
+  
+ 
+  .color-bar-container {
+    height: 30px;
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+ 
+  .color-segment {
+    float: left;
+    height: 100%;
+    width: 33.3333%;
+  }
+  
+  .segment-green {
+    background-color: var(--color-bg);
+  }
+  
+  .segment-orange {
+    background-color: var(--yellow-color);
+  }
+  
+  .segment-red {
+    background-color: #dc3545;
+  }
+  
+ 
+  .bar-pointer {
+    left: 50%;
+    top: -40px;
+    width: 0;
+  }
+  
+  .pointer-label {
+    background-color: #fff;
+    padding: 2px 6px;
+    font-size: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    white-space: nowrap;
+    transform: translateX(-50%);
+  }
+  
+  .pointer-line {
+    width: 2px;
+    height: 40px;
+    background-color: #333;
+    margin: 0 auto;
+  }
+  
+ 
+  .property-history-box {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  

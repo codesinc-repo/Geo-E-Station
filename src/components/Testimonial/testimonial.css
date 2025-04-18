@@ -1,0 +1,60 @@
+#testimonial-swiper .swiper-slide {
+    background: #fff;
+    padding: 30px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    height: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 350px; /* Ensures consistent card height */
+  }
+  
+  #testimonial-swiper .testimonial-text {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+    line-height: 1.5;
+  }
+  
+  #testimonial-swiper .testimonial-author {
+    font-weight: bold;
+    font-size: 18px;
+    color: #333;
+    margin-top: 10px;
+  }
+  
+  #testimonial-swiper .testimonial-role {
+    font-size: 14px;
+    color: #888;
+  }
+  
+  #testimonial-swiper .testimonial-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    object-fit: cover;
+    margin-top: 20px;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    #testimonial-swiper .swiper-slide {
+      width: 250px;
+      min-height: 300px;
+      padding: 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    #testimonial-swiper .swiper-slide {
+      width: 200px;
+      min-height: 280px;
+      padding: 15px;
+    }
+  }
+  

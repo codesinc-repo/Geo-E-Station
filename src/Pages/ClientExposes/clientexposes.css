@@ -1,0 +1,9 @@
+.expose-management {
+  width: 85vw;
+  margin: auto;
+  background-color: #e6e6e6;
+  color: #000000;
+
+  padding: 20px;
+  border: 2px solid green;
+}

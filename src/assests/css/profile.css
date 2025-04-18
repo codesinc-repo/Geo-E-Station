@@ -1,0 +1,172 @@
+
+    body {
+      font-family: "Rajdhani", sans-serif;
+      background-color: white;
+      margin: 20px;
+    }
+    .parent-user-info{
+
+    
+
+    .user-information-title {
+      
+      font-weight: bold;
+      color: #444;
+    }
+
+    .user-information-nav-tabs .nav-link.active {
+      background: rgb(80, 200, 120);
+      color: #fff;
+      border: none;
+      font-weight: bold;
+    }
+
+    .user-information-nav-tabs .nav-link {
+      background: #f9f9f9;
+    }
+
+    .user-information-profile-photo {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 2px solid rgb(80, 200, 120);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 10px;
+      transition: border-color 0.3s ease;
+      cursor: pointer;
+    }
+
+    .user-information-profile-photo:hover {
+      border-color: #333;
+    }
+
+    .user-information-profile-photo-text {
+      font-size: 14px;
+      color: #777;
+    }
+
+    .user-information-form-control {
+      border: 1px solid #ccc;
+      transition: all 0.3s ease;
+    }
+    
+    .user-information-form-control:focus {
+      outline: none;
+      border-color: #61CE70;
+      box-shadow: 0 0 5px #61CE70;
+    }
+    #Biography-language-select:focus{
+        outline: none;
+      border-color: #61CE70;
+      box-shadow: 0 0 5px #61CE70;
+    }
+    .form-select-biography:focus{
+        outline: none;
+      border-color: #61CE70;
+      box-shadow: 0 0 5px #61CE70; 
+    }
+    .biography-user-area-message:focus{
+        outline: none;
+      border-color: #61CE70;
+      box-shadow: 0 0 5px #61CE70; 
+    }
+
+    .user-information-form-label {
+      font-weight: bold;
+      color: #555;
+    }
+
+    .input-group .form-control {
+      border-radius: 5px 0 0 5px;
+    }
+
+    .input-group .input-group-text {
+      border-radius: 0 5px 5px 0;
+      background-color: transparent;
+      border: 1px solid #ccc;
+      cursor: pointer;
+      transition: border-color 0.3s ease;
+    }
+
+    ::placeholder {
+      color: #aaa;
+      /* font-style: italic; */
+      
+    }
+
+    .user-information-btn-keep {
+            background: rgb(80, 200, 120);
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 20px;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .user-information-btn-keep:hover {
+        background: rgb(37, 206, 94);
+
+      transform: scale(1.05);
+    }
+
+    .user-information-form-check-input {
+      accent-color: #333;
+    }
+
+    .user-information-footer-text {
+      font-size: 14px;
+      color: #777;
+    }
+
+    .user-information-footer-text a {
+      color: #333;
+      text-decoration: underline;
+    }
+
+    .user-information-footer-text a:hover {
+      text-decoration: none;
+    }
+
+    .Biography-toolbar {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+
+    .Biography-buttons {
+      display: flex;
+      justify-content: space-between;
+      /* background: rgb(80, 200, 120); */
+
+    }
+
+    .Biography-save-btn {
+      width: 48%;
+      background: rgb(80, 200, 120) !important;
+      border: none;
+
+    }
+    .Biography-save-btn:focus{
+        outline: none;
+      border-color: #61CE70;
+      box-shadow: 0 0 5px #61CE70; 
+    }
+
+    .Biography-template-btn {
+      width: 48%;
+      background: rgb(80, 200, 120) !important;
+      border: none;
+
+    }
+    .Biography-template-btn:focus{
+        outline: none;
+      border-color: #61CE70;
+      box-shadow: 0 0 5px #61CE70; 
+    }
+    .nav-link-perso-bio{
+        color:black;
+    }
+  }
+ 

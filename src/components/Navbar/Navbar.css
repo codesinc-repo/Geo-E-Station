@@ -1,0 +1,53 @@
+/* Style the Google Translate dropdown */
+#google_translate_element select {
+  font-size: 14px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  background-color: white;
+  color: black;
+}
+
+/* Hide the Google Translate branding */
+#google_translate_element .goog-te-gadget {
+  font-family: Arial, sans-serif;
+  font-size: 0;
+  /* Hide extra text */
+}
+
+.nav-link-underline {
+  position: relative;
+  color: #000;
+  text-decoration: none;
+  padding: 0px 30px !important;
+  font-weight: 500;
+  font-size: 17px;
+}
+
+/* The animated underline (hidden by default) */
+.nav-link-underline::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -2px;
+  /* Adjust spacing below the text */
+  height: 2px;
+  background-color: #33db4a;
+  /* The underline color */
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease-out;
+}
+
+/* Reveal the underline on hover */
+.nav-link-underline:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+/* Remove default underline and maintain color on hover */
+.nav-link-underline:hover {
+  text-decoration: none;
+  color: #33db4a;
+}

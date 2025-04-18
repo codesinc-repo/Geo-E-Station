@@ -1,0 +1,29 @@
+.header-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .text-muted {
+    font-size: 0.9rem;
+  }
+  
+  .btn-secondary {
+    background-color: #6c757d;
+    border: none;
+    font-size: 0.9rem;
+    color: #fff;
+    padding: 0.3rem 0.8rem;
+  }
+  
+  .btn-outline-primary {
+    font-size: 0.9rem;
+    color: #0078d7;
+    border-color: #0078d7;
+  }
+  
+  .btn-outline-primary:hover {
+    background-color: #0078d7;
+    color: #fff;
+  }
+  

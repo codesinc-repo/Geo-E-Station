@@ -1,0 +1,28 @@
+.property-detail-header {
+    background-color: #fff; 
+    border-bottom: 1px solid #dee2e6; 
+    padding: 1rem 0;
+  }
+  
+  .property-detail-header .icon-text {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; 
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  
+  .property-detail-header .icon-text .icon {
+    font-size: 1.25rem; 
+  }
+  
+  .property-detail-header .btn-generate {
+    font-weight: bold;
+    background-color: var( --color-bg);
+    color:white;
+  }
+  .property-detail-header .btn-generate:hover {
+    font-weight: bold;
+    background-color: var( --yellow-color)
+  }
+  

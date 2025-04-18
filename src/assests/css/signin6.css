@@ -1,0 +1,79 @@
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+}
+.header-logo {
+  font-size: 30px;
+  font-weight: bold;
+  color: #333;
+  margin: 30px;
+}
+.header-logo span {
+  color: #28a745; /* Green triangle */
+}
+.card-container {
+  max-width: 900px;
+  margin: 50px auto;
+  text-align: center;
+}
+.card {
+  border: 2px solid #28a745; /* Green border */
+  border-radius: 12px;
+  padding: 30px;
+}
+.card h5 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+.option-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.option {
+  flex: 1;
+  max-width: 350px;
+  padding: 30px;
+  border: 2px solid #020202;
+  border-radius: 12px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.option:hover {
+  border: 2px solid #28a745; /* Green border on hover */
+}
+.option.active {
+  background-color: #e6f7e6; /* Light green background */
+  border-color: #28a745; /* Green border */
+}
+.option .icon {
+  font-size: 50px;
+  color: #28a745; /* Green icon */
+  margin-bottom: 15px;
+}
+.option .title {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+.option .subtitle {
+  color: #666;
+  font-size: 16px;
+}
+.chat-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: #000;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}

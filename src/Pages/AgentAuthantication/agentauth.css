@@ -1,0 +1,32 @@
+.auth-container {
+  width: 1000px;
+  height: 500px;
+
+  margin: auto;
+  background-color: #98a099;
+  color: #000000;
+  border-radius: 8px;
+  padding: 20px;
+  height: 100vh;
+}
+
+.auth-item {
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-green {
+  background-color: #139601;
+  color: #fff;
+  border: none;
+  margin-top: 20px;
+}
+
+.btn-green:hover {
+  background-color: #28b840;
+}

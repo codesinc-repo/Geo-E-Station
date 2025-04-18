@@ -1,0 +1,120 @@
+/* Sidebar Container */
+.sidebar-container {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  /* background-color: var(--color-bg, #ffffff); */
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+  overflow: hidden;
+  width: 60px; /* Sidebar width when collapsed */
+  transition: width 0.3s ease;
+  height: 100%;
+}
+
+/* Sidebar */
+.sidebar {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Logo styling */
+.logo-container {
+  padding: 15px 0;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+}
+
+.sidebar-logo {
+  max-width: 40px;
+  transition: max-width 0.3s ease;
+}
+
+.sidebar-container.expanded .sidebar-logo {
+  max-width: 160px; /* Expand logo width */
+}
+
+/* Navigation items container */
+.nav-items-container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: start;
+  align-items: start;
+  overflow-y: auto;
+}
+
+/* Sidebar item */
+.sidebar-item {
+  margin: 5px 10px;
+  border-radius: 8px;
+  transition: background-color 0.2s;
+}
+
+.sidebar-item:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* Sidebar link */
+.sidebar-link {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  color: #333;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+/* Icon */
+.sidebar-icon {
+  min-width: 20px;
+  font-size: 18px;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  margin-right: 15px;
+  transition: font-size 0.3s ease; /* Icon grow on hover */
+}
+
+/* Text that appears on hover */
+.sidebar-text {
+  opacity: 0;
+  transform: translateX(-10px);
+  transition: all 0.3s ease;
+  display: none; /* Hide the text initially */
+}
+
+.sidebar-container:hover .sidebar-item:hover .sidebar-text {
+  opacity: 1;
+  transform: translateX(0);
+  display: inline-block; /* Show the text when hovering the item */
+}
+
+/* When hovering over the icon, increase its size */
+.sidebar-container:hover .sidebar-item:hover .sidebar-icon {
+  font-size: 25px; /* Increase icon size */
+}
+
+/* Logout link at the bottom */
+.logout-link {
+  margin-top: auto;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  padding-top: 15px;
+}
+
+/* Main content adjustment */
+.main-content {
+  margin-left: 60px; /* Adjust for the sidebar */
+  transition: margin 0.3s ease;
+  width: calc(100% - 60px); /* Adjust the width of the main content */
+}
+
+.sidebar-container.expanded ~ .main-content {
+  margin-left: 200px; /* Adjust width of main content when expanded */
+  width: calc(100% - 200px); /* Ensure content is properly adjusted */
+}

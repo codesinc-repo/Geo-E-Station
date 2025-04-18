@@ -1,0 +1,384 @@
+#map {
+  width: 100%;
+  /* height: 100vh; */
+}
+
+/* Reset Leaflet tile styles */
+.leaflet-container img {
+  max-width: none !important;
+  max-height: none !important;
+}
+
+/* Add this CSS to your map.css file */
+.leaflet-touch .leaflet-control-layers-toggle {
+  color: green;
+  background-color: green !important;
+  /* Change the color of the icon to green */
+}
+
+.__dropdown-toggle {
+  display: flex;
+  justify-content: center;
+  border: 2px solid black;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  /* Position below the button */
+  left: 0;
+  z-index: 1000;
+  /* Ensure it appears above other elements */
+  display: none;
+  /* Initially hidden */
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 0px;
+  padding: 5px 0;
+}
+
+.dropdown-menu button {
+  display: block;
+  width: 100%;
+  padding: 8px 12px;
+  border: none;
+  background: none;
+  text-align: left;
+  cursor: pointer;
+}
+
+.dropdown-menu button:hover {
+  background-color: #f1f1f1;
+  /* Highlight on hover */
+}
+
+.draw-zone-button {
+  position: absolute;
+  bottom: 20px;
+  left: 75%;
+  transform: translateX(-50%);
+  z-index: 1000; /* Ensure it's above the map */
+  background-color: #33db4a; /* Green color */
+  color: #fff;
+  border: none;
+  padding: 10px 15px; /* Adjusted for icon space */
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.clear-directions-button {
+  position: absolute;
+  bottom: 20px;
+  left: 35%;
+  transform: translateX(-50%);
+  z-index: 1000; /* Ensure it's above the map */
+  background-color: #33db4a; /* Green color */
+  color: #fff;
+  border: none;
+  padding: 10px 15px; /* Adjusted for icon space */
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.clear-directions-button:hover {
+  background: #2ba837; /* Slightly darker green on hover */
+  color: #000;
+}
+
+.draw-zone-button:hover {
+  background: #2ba837; /* Slightly darker green on hover */
+  color: #000;
+}
+
+.draw-zone-button svg {
+  margin-right: 5px; /* Space between the icon and text */
+}
+
+@media (min-width: 992px) {
+  .draw-zone-button {
+    bottom: 20px;
+    /* left: 5%; */
+    transform: translateX(-50%);
+  }
+
+  .clear-directions-button {
+    bottom: 20px;
+    /* left: 5%; */
+    transform: translateX(-50%);
+  }
+}
+
+/* Positioning and alignment for medium screens (tablets) */
+@media (max-width: 991px) and (min-width: 768px) {
+  .draw-zone-button {
+    bottom: 20px;
+    left: 77%;
+    transform: translateX(-40%);
+  }
+
+  .clear-directions-button {
+    bottom: 20px;
+    /* left: 50%; */
+    transform: translateX(-50%);
+  }
+}
+
+/* Positioning for small screens (phones) */
+@media (max-width: 767px) {
+  .draw-zone-button {
+    bottom: 40px; /* Less space at the bottom for smaller screens */
+    font-size: 14px; /* Smaller font size for mobile */
+    padding: 8px 12px; /* Adjust padding for mobile */
+    left: 75%; /* Center horizontally */
+    transform: translateX(-50%);
+  }
+  .clear-directions-button {
+    bottom: 40px; /* Less space at the bottom for smaller screens */
+    font-size: 14px; /* Smaller font size for mobile */
+    padding: 8px 12px; /* Adjust padding for mobile */
+    left: 28%; /* Center horizontally */
+    transform: translateX(-50%);
+  }
+
+  /* Stack buttons vertically on smaller screens */
+  .clear-directions-button {
+    margin-top: 0px; /* Space between the buttons */
+  }
+  .draw-zone-button {
+    margin-top: 15px;
+  }
+}
+
+/* Positioning for very small screens (extra small phones) */
+@media (max-width: 576px) {
+  .top-bar .live-location-control{
+    right:  39%;
+    }
+  .draw-zone-button {
+    left: 32%;
+    bottom: 10px; /* Less bottom spacing */
+    font-size: 12px; /* Even smaller font on very small screens */
+    padding: 10px 15px; /* Adjust padding further */
+  }
+  .clear-directions-button {
+    bottom: 10px; /* Less bottom spacing */
+    left: 77%;
+    font-size: 12px; /* Even smaller font on very small screens */
+    padding: 6px 10px; /* Adjust padding further */
+  }
+}
+/* Property Modal Styling - Left Aligned */
+.property-modal-container {
+  position: absolute;
+  left: 20px;
+  width: 350px;
+  z-index: 1000;
+}
+
+.property-modal {
+  background: white;
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+}
+
+/* Close Button */
+.modal-header {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* Property Image */
+.property-image img {
+  width: 18 !important;
+  height: 26vh;
+}
+
+
+/* Property Info */
+.property-info {
+  text-align: left;
+}
+
+.property-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.property-price {
+  font-size: 16px;
+  color: #ff5a5f;
+  font-weight: bold;
+}
+
+.property-location {
+  font-size: 14px;
+  color: #555;
+}
+
+.property-specs {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+/* Action Buttons */
+.property-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2px;
+}
+
+.save-btn, .contact-btn {
+  width: 48%;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.save-btn {
+  background: #f5f5f5;
+}
+
+.contact-btn {
+  background: #007bff;
+  color: white;
+}
+
+/* Share and Download Buttons */
+.property-share {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.whatsapp-btn, .pdf-btn, .download-btn {
+  width: 100%;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.whatsapp-btn {
+  background: #25d366;
+  color: white;
+}
+
+.pdf-btn {
+  background: #ff9800;
+  color: white;
+}
+
+.download-btn {
+  background: #4caf50;
+  color: white;
+}
+
+
+.map-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+/* Drawing mode styles */
+.map-container.drawing-mode {
+  cursor: crosshair !important;
+}
+
+/* Enhanced marker styles for better clickability */
+.map-container:not(.drawing-mode) img[src*="map"],
+.map-container:not(.drawing-mode) img[src*="marker"] {
+  pointer-events: auto !important;
+  cursor: pointer !important;
+  z-index: 9999 !important;
+}
+
+/* Drawing mode cursor override */
+.map-container.drawing-mode img[src*="map"],
+.map-container.drawing-mode img[src*="marker"] {
+  pointer-events: none !important;
+}
+
+/* Button styles */
+.draw-zone-button {
+  position: absolute;
+  z-index: 1000;
+
+  border-radius: 4px;
+  padding: 8px 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  cursor: pointer;
+}
+
+.clear-directions-button {
+  position: absolute;
+  padding: 8px 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  cursor: pointer;
+}
+
+/* Override Google Maps styles to ensure proper cursor behavior */
+.gm-style {
+  cursor: default !important;
+}
+
+.gm-style.drawing-active {
+  cursor: crosshair !important;
+}
+/* Add this to your map.css or style tag */
+.gm-style {
+  right: 320px !important; /* Make space for the sidebar */
+}
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+/* Apply to focused marker */
+.gm-style img[src*="for-blue"] {
+  animation: pulse 1s ease-in-out;
+  z-index: 1000 !important;
+}
+/* Style for the property boundary */
+.gmnoprint circle {
+  animation: pulseBoundary 2s infinite;
+}
+
+@keyframes pulseBoundary {
+  0% { stroke-opacity: 0.8; fill-opacity: 0.35; }
+  50% { stroke-opacity: 1; fill-opacity: 0.5; }
+  100% { stroke-opacity: 0.8; fill-opacity: 0.35; }
+}
+.proprtyheader{
+  margin-left: 40px;
+}
+@media (max-width: 768px) {
+  .proprtyheader{
+    margin-left: 10px;
+  }  }

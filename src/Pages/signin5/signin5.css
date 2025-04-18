@@ -1,0 +1,73 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+  }
+  
+  .header-logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin: 20px;
+  }
+  
+  .header-logo span {
+    color: #28a745;
+    /* Green color for the triangle */
+  }
+  
+  .card-container {
+    max-width: 900px;
+    margin: 50px auto;
+    text-align: center;
+  }
+  
+  .card {
+    border: 2px solid #28a745;
+    /* Green border */
+    border-radius: 10px;
+    padding: 20px;
+  }
+  
+  .card h5 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .option {
+    display: inline-block;
+    width: 250px;
+    height: 200px;
+    padding: 20px;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    margin: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .option:hover {
+    border: 1px solid #28a745;
+    /* Green border on hover */
+  }
+  
+  .option .icon {
+    font-size: 60px;
+    color: #28a745;
+    /* Green icon */
+    margin-bottom: 10px;
+  }
+  
+  .option .title {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+  
+  .option .subtitle {
+    color: #666;
+    font-size: 14px;
+  }
+  

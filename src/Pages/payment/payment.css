@@ -1,0 +1,45 @@
+.payment-logo {
+    width: 150px;
+    margin-bottom: 10px;
+  }
+  
+  .payment-card-logos img {
+    width: 50px;
+    margin-right: 10px;
+  }
+  
+  .unique-subscription-box {
+    max-width: 400px;
+    margin: 50px auto;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .custom-form-box {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #f9f9f9;
+  }
+  
+  .custom-input-box {
+    background-color: #fff;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    padding: 10px;
+  }
+  
+  .subscribe-button {
+    background-color: #28a745;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  .subscribe-button:hover {
+    background-color: #218838;
+  }
+  

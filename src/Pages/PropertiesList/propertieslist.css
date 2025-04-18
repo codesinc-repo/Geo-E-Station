@@ -1,0 +1,22 @@
+.custom-progress-bar {
+  background-color: #33db4a !important;
+  height: 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.custom-progress-container {
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  padding: 5px;
+  width: 60%;
+}
+
+.custom-progress-label {
+  font-weight: bold;
+  color: #333;
+}
+.fs-12{
+
+  font-size: 12px;
+}

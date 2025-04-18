@@ -1,0 +1,26 @@
+.modal-custom-bg{
+    background-blend-mode: multiply;
+    backdrop-filter: blur(5px);
+    
+}
+
+.custom-modal-color{
+    background-color: rgba(0, 0, 0, 0.7);
+    color:white;
+    border-radius:0px;
+    border:1px solid gray;
+    
+}
+.custom-modal-color:hover{
+    background-color: #99ff99;
+    color:black;
+}
+
+.custom-modal-color::placeholder {
+    color: white; 
+    opacity: 1; 
+}
+.custom-modal-color:hover::placeholder {
+    color: black; 
+    opacity: 1; 
+}

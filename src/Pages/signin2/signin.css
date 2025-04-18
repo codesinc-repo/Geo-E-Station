@@ -1,0 +1,57 @@
+.___container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.___form-container {
+  max-width: 700px;
+  margin: 2px auto;
+  border: 1px solid #28a745; /* Green border */
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.___btn-follow {
+  background-color: #28a745; /* Green background */
+  color: white;
+  font-weight: bold;
+  border: none;
+  width: 100%;
+  margin-top: 7px;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.___btn-follow:hover {
+  background-color: #1e7e34; /* Darker green background */
+}
+
+.___option-button {
+  background-color: #f8f9fa; /* Light gray background */
+  color: black;
+  border: 1px solid #dee2e6; /* Gray border */
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.___option-button:hover {
+  background-color: #e9ecef; /* Slightly darker gray */
+  border-color: #28a745; /* Green border */
+}
+
+.___option-button.selected {
+  background-color: #28a745; /* Green background */
+  color: white;
+  border-color: #28a745;
+}
+
+.___login-container {
+  display: block;
+  margin: 0 auto 20px auto;
+  width: 120px;
+  height: auto;
+}

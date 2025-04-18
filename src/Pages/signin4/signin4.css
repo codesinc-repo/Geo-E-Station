@@ -1,0 +1,49 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+  }
+  .survey-container {
+    max-width: 1000px;
+    margin: 80px auto;
+    padding: 30px;
+    border: 2px solid #28a745; /* Green border */
+    border-radius: 12px;
+    background: white;
+  }
+  .survey-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 40px;
+    font-weight: bold;
+    color: #333;
+  }
+  .survey-option {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    height: 150px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    background-color: #ffffff;
+  }
+  .survey-option:hover {
+    border: 2px solid #28a745; /* Green border on hover */
+  }
+  .icon {
+    font-size: 3rem;
+    color: #28a745; /* Green icon */
+    margin-bottom: 10px;
+  }
+  .survey-option p {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0;
+    color: #333;
+  }

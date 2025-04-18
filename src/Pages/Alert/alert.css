@@ -1,0 +1,6 @@
+@media (max-width: 768px) {
+  .Newcardclass {
+    width: 70vw !important;
+    margin-left: 40px;
+  }
+}

@@ -1,0 +1,30 @@
+.manager-container {
+  width: 1000px;
+  height: 500px;
+
+  margin: auto;
+  background-color: #c5c9c6;
+  color: #000000;
+  border-radius: 8px;
+  padding: 20px;
+  height: 100vh;
+  border: 2px solid #2cae3c;
+}
+
+.responsibility-item {
+  background-color: #2cae3c;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.btn-green {
+  background-color: #ffffff;
+  color: #000000;
+  border: none;
+}
+
+.btn-green:hover {
+  background-color: #000000;
+}
+/* Sidebar */

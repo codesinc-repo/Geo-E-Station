@@ -1,0 +1,180 @@
+/* PropertyFilter.css */
+.property-filter-container {
+  font-family: Arial, sans-serif;
+  padding: 0 20px;
+}
+
+.filter-title {
+  font-size: 20px;
+  /* margin-bottom: 20px; */
+  color: #4B4B4B;
+  font-weight: 600;
+  line-height: 24px;
+  font-family: inter;
+}
+.filter-header .reset-btn{
+  padding: 4px 8px;
+  color: #6CCA98;
+  border: 1px solid #6CCA98;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  font-family: inter;
+}
+
+.section-label {
+  display: block;
+  /* margin-bottom: 8px; */
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 17px;
+  color: #98A0B4;
+  width: 100%;
+}
+.check-label{
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  color: #4B4B4B;
+  font-family: inter;
+}
+.view-con .box{
+  width:33% !important;
+}
+select{
+  background: transparent;
+}
+.transbtn{
+  border-radius: 50px;
+  display: inline-block;
+  max-width: 50%;
+  padding: 12px 61px;
+  font-family: inter;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 14px;
+}
+.transbtn.active{
+  background: #6CCA98;
+  color: #fff;
+}
+.transbtngroup{
+  width: 100%;
+}
+.check{
+  width: auto;
+  margin-top: -5px;
+  margin-right: 3px;
+}
+.checks{
+  width: 100%;
+  margin-top: -5px;
+  margin-right: 3px;
+}
+.bedroom-btn{
+  background-color: #F2F4F7;
+  padding: 6px 24px;
+  border-radius: 10px;
+  border: none !important;
+  font-family: inter;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #4B4B4B;
+}
+.bedroom-btn:hover {
+  background-color: #6CCA98; /* Bootstrap primary blue */
+  color: white;
+  border:none !important;
+}
+.bedroom-btn.active {
+  background-color: #6CCA98; /* Bootstrap primary blue */
+  color: white;
+  border:none !important;
+}
+.filter-dropdown {
+  width: 100%;
+  padding: 8px 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #333;
+}
+
+.city-checkbox-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.city-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #333;
+}
+
+.city-checkbox input {
+  margin: 0;
+}
+
+.checkbox-label {
+  cursor: pointer;
+}
+
+.divider {
+  height: 1px;
+  background-color: #eee;
+  margin: 20px 0;
+}
+
+.section-header {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #333;
+  font-weight: 500;
+}
+
+.range-input-container {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.range-input {
+  flex: 1;
+}
+
+.range-input label {
+  display: block;
+  font-size: 12px;
+  color: #777;
+  margin-bottom: 4px;
+}
+
+.range-input input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.range-values {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #555;
+}
+
+.plot-area-input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}

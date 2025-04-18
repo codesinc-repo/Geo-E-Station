@@ -1,0 +1,142 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #33DB4A;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+.property-highlight {
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+.property-highlight img {
+    max-width: 150px;
+    border-radius: 8px;
+}
+.property-details {
+    margin-left: 20px;
+}
+.rating {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #fca311;
+}
+.rating-categories {
+    margin: 20px;
+}
+.rating-category {
+    background: white;
+    padding: 15px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.progress-bar {
+    width: 60%;
+    background: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 10px;
+}
+.progress-bar span {
+    display: block;
+    height: 10px;
+    background: #33DB4A;
+}
+.add-rating {
+    text-align: center;
+    margin: 20px;
+}
+.add-rating input, .add-rating button {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+.add-rating button {
+    background-color: #33DB4A;
+    color: white;
+    cursor: pointer;
+}
+.add-rating button:hover {
+    background-color: #07b31e;
+}
+.modal-content {
+    padding: 20px;
+}
+.modal-header {
+    background-color: #33DB4A;
+    color: white;
+}
+.modal-footer {
+    text-align: center;
+}
+.sidebar {
+position: absolute;
+top: 0;
+left: 0;
+width: 60px;
+height: 657px;
+background: #33DB4A;
+display: flex;
+flex-direction: column;
+align-items: center;
+padding-top: 10px;
+z-index: 1000;
+}
+
+.sidebar img {
+width: 50px;
+height: 30px;
+margin-bottom: 20px;
+}
+
+.sidebar ul {
+list-style: none;
+padding: 0;
+margin: 0;
+width: 100%;
+}
+
+.sidebar li {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 60px;
+cursor: pointer;
+}
+
+.sidebar i {
+color: #fff;
+font-size: 20px;
+transition: color 0.3s ease;
+}
+
+.sidebar i:hover {
+color: #f0d124;
+}
+
+.sidebar .separator {
+width: 80%;
+height: 1px;
+background: #555;
+margin: 20px 0;
+}
+
+.sidebar .logout {
+margin-top: auto;
+margin-bottom: 20px;
+}
+

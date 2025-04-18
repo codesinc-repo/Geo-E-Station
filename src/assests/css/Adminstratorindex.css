@@ -1,0 +1,712 @@
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.map-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+#map {
+  width: 100%;
+  height: 100%;
+}
+
+.sidebar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 100%;
+  background: #33DB4A;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10px;
+  z-index: 1000;
+}
+
+.sidebar img {
+  width: 50px;
+  height: 30px;
+  margin-bottom: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.sidebar li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  cursor: pointer;
+}
+
+.sidebar i {
+  color: #fff;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+.sidebar i:hover {
+  color: #f0d124;
+}
+
+.sidebar .separator {
+  width: 80%;
+  height: 1px;
+  background: #555;
+  margin: 20px 0;
+}
+
+.sidebar .logout {
+  margin-top: auto;
+  margin-bottom: 20px;
+}
+
+/* Top Bar */
+.top-bar {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.top-bar input {
+  padding: 8px 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  width: 300px;
+}
+.top-bar input:hover{
+  border: 1px solid #f0d124;
+}
+
+.top-bar button {
+  background: #33DB4A;
+  color: #fff;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.top-bar button:hover {
+  background: #33DB4A;
+  color: #000;
+}
+
+/* Map Buttons */
+.map-buttons {
+  position: absolute;
+  top: 10px;
+  right: 120px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 1000;
+}
+.rightbar-button{
+  position: absolute;
+  top: 300px;
+  
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 1000;
+
+
+}
+.rightbar-icons{
+  position: absolute;
+  top: 400px;
+  right: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 1000;
+  
+}
+.rightbar-icons i{
+  font-size: 25px;
+  color: #007a10;
+  cursor: pointer;
+}
+.rightbar-icons i:hover{
+  color: #000000;
+}
+.rightbar-button button{
+  background: #33DB4A;
+  color: #fff;
+  border: none;
+  padding: 8px 13px;
+  border-radius: 25px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+
+
+}
+.rightbar-button button:hover {
+  background: #33DB4A;
+  color: #000;
+}
+
+
+
+.map-buttons button {
+  background: #33DB4A;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.map-buttons button i {
+  font-size: 16px;
+}
+
+.map-buttons button:hover {
+  background: #33DB4A;
+  color: #000;
+}
+
+/* Map View Switch */
+.view-switch {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 10px;
+  z-index: 1000;
+}
+
+.view-switch button {
+  background: #33DB4A;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+.__analytic{
+  margin-left: 21px;
+  margin-bottom: 10px;
+}
+
+.view-switch button:hover {
+  background: #33DB4A;
+  color: #000;
+}
+/* Filter Window Styling */
+
+.__marketreseach{
+background-color: #33DB4A;
+color: white;
+}
+.__marketreseach:hover{
+background-color: #33DB4A;
+  color: #000;
+}
+.text-color {
+        color: white;
+        background-color: #33DB4A;
+        border: 0;
+        border-radius: 30px;
+        margin-bottom: 10px;
+    }
+
+    .text-color:hover {
+        background-color: #33DB4A;
+        color: black;
+
+    }
+    .right-sidebar {
+position: absolute;
+top: 0;
+right: 0;
+width: 400px;
+height: 100%;
+background: #fff;
+border-left: 1px solid #ddd;
+box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+padding: 20px;
+z-index: 1000;
+overflow-y: auto;
+}
+
+.property-listing-section {
+padding: 20px;
+background-color: #f4f4f4;
+border-radius: 8px;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.property-listing-section h2 {
+font-size: 24px;
+margin-bottom: 20px;
+color: #333;
+}
+
+.create-alert-btn {
+background-color: #33DB4A;
+color: #ffffff;
+padding: 10px 20px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+font-size: 16px;
+transition: background-color 0.3s ease;
+margin-bottom: 20px;
+}
+
+.create-alert-btn:hover {
+background-color: #33DB4A;
+color: #33DB4A;
+}
+
+.close-btn {
+position: absolute;
+top: 10px;
+right: 10px;
+background: none;
+border: none;
+font-size: 24px;
+color: #333;
+cursor: pointer;
+}
+
+.close-btn:hover {
+color: #f0d124;
+}
+/* Style for the drawing buttons */
+#draw-polyline, #draw-polygon, #draw-rectangle, #draw-circle, #draw-marker ,#clear-drawings{
+  
+  background: #33DB4A;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Optional: Add a hover effect */
+#draw-polyline:hover, #draw-polygon:hover, #draw-rectangle:hover, #draw-circle:hover, #draw-marker:hover ,#clear-drawings{
+  background-color: #45a049; /* Darker green on hover */
+}
+
+/* Optional: Add some spacing around the control panel */
+.draw-buttons {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 1000;
+}
+.draw-button:hover{
+  background: #000000;
+  color: #000;
+
+}
+.dropdown-container {
+display: flex;
+justify-content: space-between; /* Distribute items evenly */
+gap: 10px; /* Add space between the dropdowns */
+flex-wrap: wrap; /* Allow wrapping on smaller screens */
+width: 100%; 
+box-sizing: border-box; 
+}
+
+
+.dropdown {
+flex: 1; 
+min-width: 80px; 
+max-width: 200px; 
+box-sizing: border-box; 
+}
+
+/* Label styling */
+.dropdown label {
+display: block;
+font-size: 14px;
+margin-bottom: 5px;
+}
+
+
+.dropdown select {
+width: 100%; 
+padding: 8px;
+border-radius: 5px;
+border: 1px solid #ccc;
+font-size: 14px;
+box-sizing: border-box; 
+}
+
+
+.filter-section {
+margin-top:20px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+.filter-btn {
+background-color: #33DB4A;
+color: #fff;
+padding: 10px 15px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+font-size: 16px;
+display: flex;
+align-items: center;
+gap: 8px;
+}
+
+.filter-btn i {
+font-size: 18px;
+}
+
+.filter-btn:hover {
+background-color: #33DB4A;
+color: #000;
+}
+/* Styling the Filters Container */
+#Myfilters {
+display: none; /* Hidden initially */
+z-index: 1000; /* Ensure it's above other elements */
+background-color: #33DB4A;
+color: #ffffff;
+position: fixed;
+top: 10%;
+left: 50%;
+transform: translateX(-50%);
+padding: 20px;
+border-radius: 8px;
+max-width: 900px; /* Restrict maximum width */
+width: 90%; /* Adjust width for responsiveness */
+height: 80vh;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+box-sizing: border-box;
+overflow: scroll;
+}
+
+/* Flexbox for Two Columns */
+#Myfilters .filter-row {
+display: flex;
+flex-wrap: wrap;
+gap: 20px; /* Space between dropdowns */
+}
+
+/* Individual Filters */
+#Myfilters label {
+display: block; /* Ensure label is on top */
+font-size: 14px;
+font-weight: 600;
+margin-bottom: 5px;
+}
+#Myfilters input {
+ /* Ensure label is on top */
+font-size: 19px;
+font-weight: 500;
+margin-bottom: 5px;
+}
+
+#Myfilters select {
+width: 100%;
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 4px;
+font-size: 14px;
+box-sizing: border-box;
+}
+
+/* Adjust Width for Two Columns */
+#Myfilters .filter-row > div {
+width: 48%; /* Two dropdowns per row */
+}
+
+/* Submit / Reset Button */
+#Myfilters button {
+display: block;
+margin: 20px auto 0;
+padding: 10px 20px;
+background-color: #33DB4A;
+color: #fff;
+font-size: 16px;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+width: 50%;
+}
+
+#Myfilters button:hover {
+background-color: #33DB4A;
+color: #000;
+border: 1px solid #000;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+#Myfilters .filter-row > div {
+width: 100%; /* Stack dropdowns vertically on smaller screens */
+}
+
+#Myfilters button {
+width: 100%;
+}
+}
+.topbardd {
+display: flex;
+align-items: center; /* Align items in the same line */
+gap: 10px; /* Space between dropdowns */
+flex: 3; /* Adjust space allocation */
+}
+
+.topbardd label {
+font-size: 16px;
+font-weight: bold;
+color: #333;
+margin-right: 5px; /* Space between label and dropdown */
+white-space: nowrap; /* Prevent label from wrapping */
+}
+
+.topbardd select {
+padding: 10px;
+font-size: 16px;
+background-color: #33DB4A; /* Black background */
+color: #fff; /* White text */
+border: 1px solid #ccc;
+border-radius: 20px;
+appearance: none; /* Hides default browser styles */
+cursor: pointer;
+flex: 1; /* Make both dropdowns evenly spaced */
+}
+
+.topbardd select option {
+background-color: #33DB4A;
+color: #000000; /* White text for options */
+
+}
+
+/* Focus and Hover States */
+.topbardd select:hover {
+background-color: #33DB4A;
+color: #000;
+border: 1px solid #000;
+}
+/* Container Styling */
+/* Center the container with improved styling */
+.agent-management {
+display: none;
+width: 92%;
+/* Limit the width for better readability */
+height: 100%; /* Adjust height to fit content */
+margin: 0 auto;
+background: #ffffff; /* White background */
+padding: 30px 40px; /* Spacious padding */
+box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+position: absolute;
+top: 50%;
+left: 53%;
+transform: translate(-50%, -50%);
+border: 2px solid #33db4a; /* Green border */
+border-radius: 12px; /* More rounded corners */
+z-index: 2000;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Heading Styling */
+.agent-management h3 {
+font-size: 35px; /* Larger font size */
+font-weight: bold;
+color: #000000;
+margin-bottom: 20px;
+text-align: center; /* Center align heading */
+}
+
+.agent-management h4 {
+font-size: 28px; /* Slightly smaller than main heading */
+font-weight: 600;
+color: #555555;
+margin-top: 30px;
+margin-bottom: 15px;
+}
+
+/* Form Styling */
+#agentForm {
+margin-bottom: 30px;
+}
+
+#agentForm .form-label {
+font-weight: 800;
+margin-right: 40px;
+
+font-size: 25px; /* Slightly larger font size */
+color: #555555;
+justify-content: center;
+}
+
+#agentForm .form-control {
+justify-content: center;
+margin-top: 10px;
+height: 50px; /* Increase input height */
+font-size: 23px; /* Larger input text */
+border-radius: 8px;
+border: 1px solid #cccccc;
+transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#agentForm .form-control:focus {
+border-color: #33db4a; /* Green border on focus */
+box-shadow: 0 0 8px rgba(51, 219, 74, 0.4); /* Subtle shadow on focus */
+}
+
+/* Button Styling */
+.agent-management .btn-success {
+background-color: #33db4a; /* Custom green color */
+border: none;
+padding: 15px;
+font-size: 18px; /* Larger button text */
+font-weight: bold;
+border-radius: 8px; /* More rounded corners */
+transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.agent-management .btn-success:hover {
+background-color: #28a745; /* Darker green on hover */
+transform: translateY(-2px); /* Slight lift on hover */
+}
+
+.agent-management .btn-success:active {
+background-color: #1e7e34; /* Even darker green on click */
+}
+
+/* Agent List Styling */
+.agent-list {
+max-height: 300px; /* Limit height */
+overflow-y: auto;
+padding: 15px;
+border: 1px solid #dddddd;
+border-radius: 8px;
+background-color: #33db4a;
+margin-top: 20px; /* Add spacing above the list */
+}
+
+/* Scrollbar Styling */
+.agent-list::-webkit-scrollbar {
+width: 8px;
+}
+
+.agent-list::-webkit-scrollbar-thumb {
+background-color: #33db4a;
+border-radius: 4px;
+}
+
+.agent-list::-webkit-scrollbar-track {
+background-color: #eaeaea;
+}
+
+/* Agent Item Styling */
+.agent-item {
+display: flex;
+justify-content: space-between;
+align-items: center;
+background-color: #ffffff;
+padding: 12px 15px;
+margin-bottom: 10px;
+border-radius: 8px;
+box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Deeper shadow for items */
+transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.agent-item:hover {
+background-color: #f1f1f1;
+transform: translateY(-1px);
+}
+
+.agent-item span {
+font-size: 18px; /* Larger font size */
+color: #333333;
+}
+
+/* Button Styling within Agent Items */
+.agent-item .btn {
+padding: 8px 16px;
+font-size: 16px; /* Larger button text */
+border-radius: 6px;
+transition: background-color 0.3s ease;
+}
+
+.agent-item .btn-success {
+background-color: #0069d9; /* Blue background */
+}
+
+.agent-item .btn-danger {
+background-color: #dc3545; /* Red background */
+}
+
+.agent-item .btn-success:hover {
+background-color: #0053ba;
+}
+
+.agent-item .btn-danger:hover {
+background-color: #c82333;
+}
+.live-button {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    
+    transform: translateX(-50%);
+    z-index: 1000;
+    background: linear-gradient(180deg, yellow, green);
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    list-style: none; /* Removes the default list marker */
+  }
+  .live-button i {
+    font-size: 30px;
+  }
+  
+  .live-button:hover {
+    background: #28a745;
+  }
+  

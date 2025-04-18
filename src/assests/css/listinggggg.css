@@ -1,0 +1,174 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  /* White background */
+  color: white;
+  /* White text for all elements */
+}
+
+.main-container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+  position: relative;
+
+}
+
+.header-title {
+  font-size: 28px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: black;
+  /* Black color for the header */
+}
+
+.add-listing-btn-header {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 10px 16px;
+  background-color: #33DB4A;
+  /* Light Green button */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.add-listing-btn-header:hover {
+  background-color: #66cc00;
+}
+
+.listing-card {
+  display: flex;
+  gap: 20px;
+  background: #32cd32;
+  /* Green background for the cards */
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.listing-card img {
+  width: 120px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.card-details {
+  flex: 1;
+}
+
+.card-category {
+  font-size: 12px;
+  font-weight: bold;
+  color: #ffcc00;
+  /* Yellow color for category */
+}
+
+.card-date {
+  font-size: 12px;
+  color: #f0e68c;
+  /* Light yellow for date */
+  margin-left: 10px;
+}
+
+.card-title {
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+.card-description {
+  font-size: 14px;
+  color: #f8f8f8;
+  /* Slight off-white color for description */
+  margin: 10px 0;
+}
+
+.card-price {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 10px;
+  display: block;
+  color: white;
+  /* White price text */
+}
+
+.add-to-list-btn {
+  padding: 8px 16px;
+  background-color: #2fa53f;
+  /* Blue button */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.add-to-list-btn:hover {
+  background-color: #118320;
+}
+
+.sidebar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 127vh;
+  background: #33DB4A;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10px;
+  z-index: 1000;
+}
+
+.sidebar img {
+  width: 50px;
+  height: 30px;
+  margin-bottom: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.sidebar li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  cursor: pointer;
+}
+
+.sidebar i {
+  color: #fff;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+.sidebar i:hover {
+  color: #f0d124;
+}
+
+.sidebar .separator {
+  width: 80%;
+  height: 1px;
+  background: #555;
+  margin: 20px 0;
+}
+
+.sidebar .logout {
+  margin-top: auto;
+  margin-bottom: 20px;
+}
