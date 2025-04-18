@@ -120,6 +120,11 @@ const Sidebar = () => {
     }
   }, [location]);
 
+  // Check if the current link is active
+  const isActive = (path) => {
+    return location.pathname === path;
+  };
+
   return (
     <div className="sidebar-container">
       <Nav className="flex-column sidebar">
@@ -130,14 +135,20 @@ const Sidebar = () => {
 
         {/* Navigation items */}
         <div className="nav-items-container">
-          {iconSet.map((item, index) => (
-            <Nav.Item key={index} className="sidebar-item">
-              <Nav.Link as={Link} to={item.link} className="sidebar-link">
-                <i className={`${item.icon} sidebar-icon`}></i>
-                <span className="sidebar-text">{item.name}</span>
-              </Nav.Link>
-            </Nav.Item>
-          ))}
+          <div>
+            {iconSet.map((item, index) => (
+              <Nav.Item key={index} className="sidebar-item">
+                <Nav.Link 
+                  as={Link} 
+                  to={item.link} 
+                  className={`sidebar-link ${isActive(item.link) ? 'active' : ''}`}
+                >
+                  <i className={`${item.icon} sidebar-icon`}></i>
+                  <span className="sidebar-text">{item.name}</span>
+                </Nav.Link>
+              </Nav.Item>
+            ))}
+          </div>
 
           {/* Logout */}
           <Nav.Item className="sidebar-item mt-auto">

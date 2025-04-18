@@ -739,7 +739,7 @@
     align-items: center;
     justify-content: center;
     padding: 10px;
-    border-radius: 8px;
+    border-radius: 60px;
     transition: background-color 0.3s ease, transform 0.3s ease;
     overflow: hidden;
     position: relative;
